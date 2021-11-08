@@ -8,7 +8,7 @@ const SPEED = 480;
 kaboom();
 
 // load assets
-loadSprite("bean", "sprites/bean.png");
+loadSprite("bag", "sprites/bag.png");
 
 scene("game", () => {
 
@@ -18,7 +18,7 @@ scene("game", () => {
     // add a game object to screen
     const player = add([
         // list of components
-        sprite("bean"),
+        sprite("bag"),
         pos(80, 40),
         area(),
         body(),
@@ -94,7 +94,7 @@ scene("game", () => {
 scene("lose", (score) => {
 
     add([
-        sprite("bean"),
+        sprite("bag"),
         pos(width() / 2, height() / 2 - 80),
         scale(2),
         origin("center"),

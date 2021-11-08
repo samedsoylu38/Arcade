@@ -2735,11 +2735,11 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   var JUMP_FORCE = 800;
   var SPEED = 480;
   Es();
-  loadSprite("bean", "sprites/bean.png");
+  loadSprite("bag", "sprites/bag.png");
   scene("game", () => {
     gravity(2400);
     const player = add([
-      sprite("bean"),
+      sprite("bag"),
       pos(80, 40),
       area(),
       body()
@@ -2793,7 +2793,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
   });
   scene("lose", (score) => {
     add([
-      sprite("bean"),
+      sprite("bag"),
       pos(width() / 2, height() / 2 - 80),
       scale(2),
       origin("center")
