@@ -74,7 +74,7 @@ scene("game", () => {
         burp();
         addKaboom(player.pos);
     });
-
+//commebngh
     // keep track of score
     let score = 0;
 
